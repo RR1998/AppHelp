@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Final Project</string>
     <string name="profile_image_description">Profile image og the user</string>
-    <string name="Name_Hint">You can modify the name that is displayed</string>
+    <string name="Name_Hint">insert your name please</string>
     <string name="name_textview_label">Name:</string>
     <string name="label_edittext_desctiption">item used as a label for the name_edittext</string>
+    <string name="rol_description">rol</string>
+    <string name="rol_string_label">Rol:</string>
+    <string name="phone_number_hint">insert your phone number please</string>
+    <string name="email_hint">Insert your email</string>
 </resources>
