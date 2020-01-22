@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="profile_image_description">Profile image og the user</string>
+    <string name="Name_Hint">You can modify the name that is displayed</string>
+    <string name="name_textview_label">Name:</string>
+    <string name="label_edittext_desctiption">item used as a label for the name_edittext</string>
 </resources>
