@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:paddingTop="50dp">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toStartOf="@id/name_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@mipmap/ic_launcher_round"
+        android:contentDescription="@string/profile_image_description" />
+
+    <TextView
+        android:id="@+id/name_textView"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/name_editText"
+        app:layout_constraintStart_toStartOf="@id/name_editText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Name:" />
+
+    <EditText
+        android:id="@+id/name_editText"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintTop_toBottomOf="@id/name_textView"
+        tools:text="Some Crazy placeholder name"
+        android:autofillHints="@string/Name_Hint"
+        android:inputType="textPersonName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
