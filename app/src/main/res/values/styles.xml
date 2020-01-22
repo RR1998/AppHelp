@@ -7,5 +7,18 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="TextViewsCustomStyle" parent="@style/Widget.AppCompat.TextView">
+        <item name="android:layout_height">@dimen/labels_standard_height</item>
+        <item name="android:layout_width">@dimen/labels_standard_width</item>
+        <item name="android:layout_marginTop">@dimen/standard_toppadding_sections</item>
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+    </style>
+    <style name="EditTextCustomStyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+        <item name="android:layout_height">@dimen/standard_textbox_height</item>
+        <item name="android:layout_width">@dimen/standard_textbox_width</item>
+    </style>
+    <style name="ConstraintLayoutCustomStyle">
+        <item name="android:padding">@dimen/standard_padding_layouts</item>
+    </style>
 </resources>
