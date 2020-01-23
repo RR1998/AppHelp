@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:paddingBottom="100dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/welcome_to_help_desk_label"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/name_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_editText"
+        style="@style/EditTextLoginStyle"
+        app:errorEnabled="true"
+        app:helperText="@string/login_user_edittext_helper_text"
+        app:layout_constraintBottom_toTopOf="@id/password_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_label">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/profile_user_hint"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/labels_standard_textsize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_editText"
+        style="@style/EditTextLoginStyle"
+        app:errorEnabled="true"
+        app:helperText="@string/login_password_edittext_helper_text"
+        app:layout_constraintBottom_toTopOf="@id/login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_editText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_login_hint"
+            android:inputType="textPassword"
+
+            android:textSize="@dimen/labels_standard_textsize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_button"
+        style="@style/MaterialButtonProfileCustomStyle"
+        android:text="@string/log_in_button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
