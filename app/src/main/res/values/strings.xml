@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="welcome_to_help_desk_label">Welcome to help desk!</string>
+    <string name="profile_user_hint">Email</string>
+    <string name="password_login_hint">Password</string>
+    <string name="log_in_button_text">Log in</string>
+    <string name="login_user_edittext_helper_text">Here goes your email!</string>
+    <string name="login_password_edittext_helper_text">Here goes your password!</string>
 </resources>
