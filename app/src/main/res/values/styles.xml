@@ -1,11 +1,51 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextViewsCustomStyle">
+        <item name="android:layout_height">@dimen/labels_standard_height</item>
+        <item name="android:layout_width">@dimen/labels_standard_width</item>
+        <item name="android:layout_marginTop">@dimen/standard_toppadding_sections</item>
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+    </style>
+
+    <style name="EditTextProfileStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+        <item name="android:layout_height">@dimen/profile_textbox_height</item>
+        <item name="android:layout_width">@dimen/profile_textbox_width</item>
+    </style>
+
+    <style name="ConstraintLayoutCustomStyle">
+        <item name="android:padding">@dimen/standard_padding_layouts</item>
+    </style>
+
+    <style name="MaterialButtonProfileCustomStyle" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="android:textSize">@dimen/profile_buttons_text_size</item>
+        <item name="android:layout_marginTop">@dimen/profile_top_margin_button</item>
+        <item name="android:layout_width">@dimen/profile_buttons_width</item>
+        <item name="android:layout_height">@dimen/profile_buttons_height</item>
+    </style>
+
+    <style name="EditTextLoginStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+        <item name="android:layout_height">@dimen/login_textbox_height</item>
+        <item name="android:layout_width">@dimen/login_textbox_width</item>
+    </style>
+
+    <style name="LoginBaseStyle">
+        <item name="android:paddingTop">@dimen/login_top_padding</item>
+        <item name="android:paddingBottom">@dimen/login_bottom_padding</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 </resources>
