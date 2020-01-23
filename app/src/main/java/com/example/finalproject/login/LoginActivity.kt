@@ -1,4 +1,4 @@
-package com.example.finalproject
+package com.example.finalproject.login
 
 import android.os.Bundle
 import android.os.PersistableBundle
