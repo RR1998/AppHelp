@@ -2,8 +2,6 @@
 <resources>
     <dimen name="profile_textbox_height">70dp</dimen>
     <dimen name="profile_textbox_width">300dp</dimen>
-    <dimen name="login_textbox_height">70dp</dimen>
-    <dimen name="login_textbox_width">300dp</dimen>
     <dimen name="name_edittext_width">180dp</dimen>
     <dimen name="standard_toppadding_sections">10dp</dimen>
     <dimen name="profile_image_size">100dp</dimen>
@@ -11,8 +9,4 @@
     <dimen name="labels_standard_height">40dp</dimen>
     <dimen name="labels_standard_textsize">14sp</dimen>
     <dimen name="standard_padding_layouts">30dp</dimen>
-    <dimen name="profile_buttons_width">180dp</dimen>
-    <dimen name="profile_buttons_height">70dp</dimen>
-    <dimen name="profile_buttons_text_size">12sp</dimen>
-    <dimen name="profile_top_margin_button">20dp</dimen>
 </resources>
