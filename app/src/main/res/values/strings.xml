@@ -11,4 +11,8 @@
     <string name="new_password_textview_hint">New password</string>
     <string name="confirm_password_hint">Confirm new password</string>
     <string name="save_new_password_button_text">Save New Password</string>
+    <string name="manager_area_hint">Manager</string>
+    <string name="new_request_textview">New Request</string>
+    <string name="request_title_hint">Request Tittle</string>
+    <string name="request_content_hint">Request Content</string>
 </resources>
