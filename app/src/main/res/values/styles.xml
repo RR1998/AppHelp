@@ -25,7 +25,8 @@
         <item name="android:padding">@dimen/standard_padding_layouts</item>
     </style>
 
-    <style name="MaterialButtonProfileCustomStyle">
+    <style name="MaterialButtonProfileCustomStyle" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
         <item name="android:textSize">@dimen/profile_buttons_text_size</item>
         <item name="android:layout_marginTop">@dimen/profile_top_margin_button</item>
         <item name="android:layout_width">@dimen/profile_buttons_width</item>
@@ -37,4 +38,9 @@
         <item name="android:layout_height">@dimen/login_textbox_height</item>
         <item name="android:layout_width">@dimen/login_textbox_width</item>
     </style>
+
+    <!--<style name="NoActionBarCustomStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>-->
 </resources>
