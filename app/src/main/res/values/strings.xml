@@ -11,4 +11,10 @@
     <string name="new_password_textview_hint">New password</string>
     <string name="confirm_password_hint">Confirm new password</string>
     <string name="save_new_password_button_text">Save New Password</string>
+    <string name="welcome_to_help_desk_label">Welcome to help desk!</string>
+    <string name="profile_user_hint">User</string>
+    <string name="password_login_hint">Password</string>
+    <string name="log_in_button_text">Log in</string>
+    <string name="login_user_edittext_helper_text">Here goes your username!</string>
+    <string name="login_password_edittext_helper_text">Here goes your password!</string>
 </resources>
