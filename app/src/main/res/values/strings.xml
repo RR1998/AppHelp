@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Final Project</string>
+    <string name="title_request">My Request</string>
+    <string name="short_by">Short by</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="text_template">Templates</string>
+    <string name="text_request">New Request</string>
+    <string name="title_request_item">Title Request</string>
+    <string name="subject">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...</string>
+    <string name="title_request_area">Human Resources</string>
+    <string name="user">\@UserName</string>
+    <string name="area">Operations</string>
+    <string name="request_btn">Request</string>
+    <string name="draf_btn">Draf</string>
+    <string name="save">Save</string>
+    <string name="assigned_to">Assigned:</string>
 </resources>
