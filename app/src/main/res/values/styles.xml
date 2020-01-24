@@ -8,6 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MaterialButtonProfileCustomStyle" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="android:textSize">@dimen/profile_buttons_text_size</item>
+        <item name="android:layout_marginTop">@dimen/profile_top_margin_button</item>
+        <item name="android:layout_width">@dimen/profile_buttons_width</item>
+        <item name="android:layout_height">@dimen/profile_buttons_height</item>
+    </style>
+
     <style name="TextViewsCustomStyle">
         <item name="android:layout_height">@dimen/labels_standard_height</item>
         <item name="android:layout_width">@dimen/labels_standard_width</item>
