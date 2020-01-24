@@ -16,7 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:elevation="8dp"
-            app:cardCornerRadius="4dp">
+            app:cardCornerRadius="4dp"
+            tools:targetApi="lollipop">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 style="@style/ConstraintLayoutCustomStyle"
@@ -82,7 +83,7 @@
                     android:id="@+id/first_option"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="First option"
+                    android:text="@string/first_option_string"
                     app:layout_constraintBottom_toTopOf="@id/second_option"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/request_content" />
@@ -91,7 +92,7 @@
                     android:id="@+id/second_option"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Second option"
+                    android:text="@string/second_option_string"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/first_option" />
 
@@ -99,7 +100,7 @@
                     android:id="@+id/third_option"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Third option"
+                    android:text="@string/third_option_string"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/second_option" />
 
@@ -116,7 +117,7 @@
                     style="@style/Widget.MaterialComponents.Button.TextButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Send"
+                    android:text="@string/send_button_text"
                     android:textSize="14sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

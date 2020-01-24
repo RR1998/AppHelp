@@ -15,4 +15,8 @@
     <string name="new_request_textview">New Request</string>
     <string name="request_title_hint">Request Tittle</string>
     <string name="request_content_hint">Request Content</string>
+    <string name="first_option_string">First option</string>
+    <string name="second_option_string">Second option</string>
+    <string name="third_option_string">Third option</string>
+    <string name="send_button_text">Send</string>
 </resources>
