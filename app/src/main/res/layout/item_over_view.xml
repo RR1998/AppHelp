@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/title_over_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Request title" />
+        <TextView
+            android:id="@+id/area_over_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Human Resources" />
+        <TextView
+            android:id="@+id/subject_over_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_over_view"
+            tools:text="Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's" />
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_margin="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subject_over_view"
+            tools:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/app_name" />
+        <TextView
+            android:id="@+id/assigned_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/assigned_to"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img_profile"
+            app:layout_constraintTop_toBottomOf="@+id/subject_over_view" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Maytee"
+            android:id="@+id/name_to_assigned"
+            app:layout_constraintStart_toStartOf="@+id/assigned_to"
+            app:layout_constraintTop_toBottomOf="@id/assigned_to"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="'@Maytee"
+            android:id="@+id/tag_assigned"
+            android:textColor="@color/blueSkyTwitter"
+            app:layout_constraintStart_toStartOf="@+id/assigned_to"
+            app:layout_constraintTop_toBottomOf="@id/name_to_assigned"/>
+
+        <TextView
+            android:id="@+id/status_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_status"
+            android:padding="3dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/subject_over_view"
+            app:layout_constraintStart_toEndOf="@+id/assigned_to"
+            app:layout_constraintTop_toBottomOf="@+id/subject_over_view"
+            tools:text="Doing" />
+        <ImageView
+            android:id="@+id/calendar_over_view"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/calendar"
+            app:layout_constraintBottom_toBottomOf="@+id/img_profile"
+            app:layout_constraintStart_toStartOf="@+id/tag_assigned" />
+        <TextView
+            android:id="@+id/date_end_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_profile"
+            app:layout_constraintStart_toEndOf="@+id/calendar_over_view"
+            app:layout_constraintTop_toTopOf="@+id/calendar_over_view"
+            tools:text="Jan 01 - Jan 10,2020" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
