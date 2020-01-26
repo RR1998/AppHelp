@@ -7,7 +7,7 @@
     <string name="text_template">Templates</string>
     <string name="text_request">New Request</string>
     <string name="title_request_item">Title Request</string>
-    <string name="subject">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...</string>
+    <string name="subject">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</string>
     <string name="title_request_area">Human Resources</string>
     <string name="user">\@UserName</string>
     <string name="area">Operations</string>
@@ -15,4 +15,15 @@
     <string name="draf_btn">Draf</string>
     <string name="save">Save</string>
     <string name="assigned_to">Assigned:</string>
+    <string name="name_hint">Name</string>
+    <string name="rol_string_label">Rol</string>
+    <string name="phone_number_hint">Phone Number</string>
+    <string name="email_hint">Email</string>
+    <string name="email_textview_text">Email</string>
+    <string name="save_profile_button">Save profile</string>
+    <string name="change_password_textview_text">Change Password</string>
+    <string name="current_password_hint">Current password</string>
+    <string name="new_password_textview_hint">New password</string>
+    <string name="confirm_password_hint">Confirm new password</string>
+    <string name="save_new_password_button_text">Save New Password</string>
 </resources>

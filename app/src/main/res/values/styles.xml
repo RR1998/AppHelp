@@ -1,11 +1,27 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TextViewsCustomStyle">
+        <item name="android:layout_height">@dimen/labels_standard_height</item>
+        <item name="android:layout_width">@dimen/labels_standard_width</item>
+        <item name="android:layout_marginTop">@dimen/standard_toppadding_sections</item>
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+    </style>
+
+    <style name="EditTextProfileStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+        <item name="android:layout_height">@dimen/profile_textbox_height</item>
+        <item name="android:layout_width">@dimen/profile_textbox_width</item>
+    </style>
+
+    <style name="ConstraintLayoutCustomStyle">
+        <item name="android:padding">@dimen/standard_padding_layouts</item>
+    </style>
 </resources>
