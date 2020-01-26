@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="standard_padding_layouts">15dp</dimen>
     <dimen name="login_textbox_height">70dp</dimen>
     <dimen name="login_textbox_width">300dp</dimen>
     <dimen name="labels_standard_textsize">14sp</dimen>
