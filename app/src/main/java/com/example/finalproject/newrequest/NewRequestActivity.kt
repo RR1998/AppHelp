@@ -1,19 +1,18 @@
 package com.example.finalproject.newrequest
 
-import android.annotation.SuppressLint
-import android.icu.util.Calendar
 import android.os.Bundle
-import android.widget.DatePicker
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
 import com.example.finalproject.R
+import com.example.finalproject.databinding.ActivityNewRequestBinding
 
 class NewRequestActivity : AppCompatActivity() {
-    @SuppressLint("NewApi")
+
+    private lateinit var binding: ActivityNewRequestBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_new_request)
-        val c = Calendar.getInstance()
-        val dp = findViewById<DatePicker>(R.id.new_request_datepicker)
-        dp.minDate = c.timeInMillis
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_new_request)
+
     }
 }
