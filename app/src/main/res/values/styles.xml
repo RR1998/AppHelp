@@ -42,4 +42,10 @@
     <style name="ConstraintLayoutCustomStyle">
         <item name="android:padding">@dimen/standard_padding_layouts</item>
     </style>
+
+    <style name="EditTextNewRequestCustomStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+        <item name="android:layout_height">@dimen/new_request_height_edittext</item>
+        <item name="android:layout_width">@dimen/new_request_width_edittext</item>
+    </style>
 </resources>
