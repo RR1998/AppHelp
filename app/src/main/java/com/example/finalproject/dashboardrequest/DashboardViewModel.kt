@@ -1,4 +1,7 @@
 package com.example.finalproject.dashboardrequest
 
-class DashBoardViewModel {
+import androidx.lifecycle.ViewModel
+
+class DashboardViewModel :ViewModel() {
+
 }
