@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -16,6 +16,16 @@
         <item name="android:layout_height">@dimen/profile_buttons_height</item>
     </style>
 
+    <style name="EditTextLoginStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+        <item name="android:layout_height">@dimen/login_textbox_height</item>
+        <item name="android:layout_width">@dimen/login_textbox_width</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="TextViewsCustomStyle">
         <item name="android:layout_height">@dimen/labels_standard_height</item>
         <item name="android:layout_width">@dimen/labels_standard_width</item>
@@ -31,5 +41,11 @@
 
     <style name="ConstraintLayoutCustomStyle">
         <item name="android:padding">@dimen/standard_padding_layouts</item>
+    </style>
+
+    <style name="EditTextNewRequestCustomStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textSize">@dimen/labels_standard_textsize</item>
+        <item name="android:layout_height">@dimen/new_request_height_edittext</item>
+        <item name="android:layout_width">@dimen/new_request_width_edittext</item>
     </style>
 </resources>
