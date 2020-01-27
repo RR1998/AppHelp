@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="userOverViewViewModel"
+            type="com.example.finalproject.useroverview.UserOverViewViewModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".useroverview.UserOverviewActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/ConstraintLayoutCustomStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/profile_image_size"
+                    android:layout_height="@dimen/profile_image_size"
+                    app:layout_constraintBottom_toTopOf="@id/rol_content_editText"
+                    app:layout_constraintEnd_toStartOf="@id/name_editText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@mipmap/ic_launcher_round" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/name_editText"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="@dimen/name_edittext_width"
+                    android:layout_height="@dimen/profile_textbox_height"
+                    app:layout_constraintBottom_toTopOf="@+id/rol_content_editText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/profile_image"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name_hint"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/labels_standard_textsize" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/rol_content_editText"
+                    style="@style/EditTextProfileStyle"
+                    app:layout_constraintBottom_toTopOf="@id/phone_number_editext"
+                    app:layout_constraintEnd_toEndOf="@+id/change_password_edittext"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profile_image">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="@string/rol_string_label" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/phone_number_editext"
+                    style="@style/EditTextProfileStyle"
+                    android:hint="@string/phone_number_hint"
+                    app:layout_constraintBottom_toTopOf="@id/email_editext"
+                    app:layout_constraintEnd_toEndOf="@+id/change_password_edittext"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rol_content_editText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/email_editext"
+                    style="@style/EditTextProfileStyle"
+                    android:hint="@string/email_hint"
+                    android:importantForAutofill="no"
+                    app:layout_constraintBottom_toTopOf="@id/save_profile_button"
+                    app:layout_constraintEnd_toEndOf="@+id/change_password_edittext"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone_number_editext">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/save_profile_button"
+                    style="@style/MaterialButtonProfileCustomStyle"
+                    android:text="@string/save_profile_button"
+                    app:layout_constraintBottom_toTopOf="@+id/change_password_textview"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/email_editext" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/change_password_textview"
+                    style="@style/TextViewsCustomStyle"
+                    android:text="@string/change_password_textview_text"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/change_password_edittext"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/save_profile_button" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/change_password_edittext"
+                    style="@style/EditTextProfileStyle"
+                    android:hint="@string/current_password_hint"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toTopOf="@+id/new_password_edittext"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/change_password_textview">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/new_password_edittext"
+                    style="@style/EditTextProfileStyle"
+                    android:hint="@string/new_password_textview_hint"
+                    app:layout_constraintBottom_toTopOf="@id/confirm_password_edittext"
+                    app:layout_constraintEnd_toEndOf="@id/change_password_edittext"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/change_password_edittext">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/confirm_password_edittext"
+                    style="@style/EditTextProfileStyle"
+                    android:hint="@string/confirm_password_hint"
+                    android:inputType="textPassword"
+                    app:layout_constraintEnd_toEndOf="@+id/new_password_edittext"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/new_password_edittext">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/save_new_password_button"
+                    style="@style/MaterialButtonProfileCustomStyle"
+                    android:text="@string/save_new_password_button_text"
+                    android:textSize="@dimen/profile_buttons_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/save_profile_button"
+                    app:layout_constraintTop_toBottomOf="@id/confirm_password_edittext" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
